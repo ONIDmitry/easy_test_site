@@ -16,6 +16,7 @@ myImage.onclick = function () {
 
 function setUserName() {
 	var myName = prompt("What is your name?");
+	if (!myName) myName = "Stranger";
 	localStorage.setItem('name', myName);
 	myHeading.innerHTML = 'Mozilla is coll, ' + myName;
 }
